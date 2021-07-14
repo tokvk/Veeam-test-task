@@ -1,0 +1,214 @@
+<html lang="en">
+
+<head>
+    <!-- 
+    Author: Konstantin Kotenko
+    Purpose: This is an assessment test task, for the position of Web Developer, Sr. Specialist. 
+-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Assessment test for Veeam" />
+    <meta name="keywords" content="Webinar, Veeam" />
+    <meta name="author" content="Konstantin Kotenko" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment test for Veeam</title>
+    <link rel="stylesheet" href="css\stylesheet.css" />
+    <!-- Google fonts were used since "Guardian Sans" font that was used in the design layout was not provided -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- Id names mostly match design layout frame names, for easy reading and checking -->
+        <img id="dots_left_top" src="images\dots_left_top.png" alt="Decoration" />
+        <img id="webinar_1" src="images\webinar_1.png" alt="Webinar logo" />
+        <img id="dots_right" src="images\dots_right.png" alt="Decoration" />
+        <img id="dots_left_bottom" src="images\dots_left_bottom.png" alt="Decoration" />
+        <div id="frame_133">
+            <div id="frame_113">
+                <a href="https://www.veeam.com/"><img id="logo" src="images\veeam_logo_topaz.svg"
+                        alt="Veeam logo" /></a>
+            </div>
+            <div id="frame_107">
+                <p id="flag">flag</p>
+                <h1>H1 title with only <br> one or two lines</h1>
+                <p id="time">Wednesday, Apr. 09</p>
+            </div>
+        </div>
+        <div id="register">
+            <div id="frame_15">
+                <!--Form needs a valid action, will be aded later. -->
+                <form action="#" name="Registration form.">
+                    <h3>Register to attend</h3>
+                    <input class="input_field" name="First_name" type="text" placeholder="   First name*" required />
+                    <br />
+                    <input class="input_field" name="Last_name" type="text" placeholder="   Last name*" required />
+                    <br />
+                    <input class="input_field" name="email" type="email" placeholder="   Business email*" required />
+                    <br />
+                    <div id="checkbox_wrapper">
+                        <input id="checkbox" name="checkbox" type="checkbox" value="Accepted" required />
+                        <label for="checkbox" id="checkbox_text">Yes, I
+                            want to receive communications about Veeam products, services and
+                            events. I can unsubscribe at any time. </label>
+                    </div>
+
+                    <p id="policy_text">
+                        By registering you agree to the
+                        <a id="policy_link" href="index.html">Veeam Privacy Policy</a>.
+                    </p>
+                    <button id="btn_submit" type="submit" value="Submit">Register now</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="frame_136">
+        <h2>Our ProPartner Program is designed to help you</h2>
+        <div id="frame_33">
+            <div id="video_container">
+                <a id="video_link" href="https://www.youtube.com/c/veeam/playlists" target="_blank">
+                    <img id="video_image" src="images\video_image.jpg" alt="Video preview" />
+                </a>
+                <h4>Veeam Live Recording</h4>
+            </div>
+            <div id="frame_112">
+                <div id="frame_111">
+                    <article id="frame_34">
+                        <p class="text_fr34">
+                            Are you challenged by meeting the demands of the Always‑On
+                            Enterprise™ and maximizing your organization's investment in the
+                            Modern Data Center? If so, join us for a webinar where you'll
+                            learn how Veeam® Software and Nutanix’s joint solution can help
+                            you achieve:
+                        </p>
+                        <ul class="text_fr34">
+                            <li>Improve productivity</li>
+                            <li>Create powerful solutions for fast backup and fast restore</li>
+                            <li>Improve efficiency across your business</li>
+                            <li>And more!</li>
+                        </ul>
+                        <p class="text_fr34">
+                            Learn how organizations like yours can benefit from Cisco and
+                            Veeam®.
+                        </p>
+                    </article>
+                    <div id="watch_video_container">
+                        <div id="pop_up_container" class="popup_container hide_popup_container">
+                            <!-- On click toggling class of a pop up iframe element for the youtube video-->
+                            <div id="hide_popup_btn" onclick="hideShow()">&#x2715</div>
+                            <iframe class="video_iframe" src="https://www.youtube-nocookie.com/embed/yxhTq9s-pbw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h4 id="text_btn_descr">Gain access to innovative learning tools</h4>
+                        <!-- On click toggling class of a pop up iframe element for the YouTube video-->
+                        <button id="watch_video_button" onclick="hideShow()">Watch now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="frame_281">
+        <h4>Learn from Veeam experts</h4>
+        <ul id="frame_280">
+            <li class="expert_container">
+                <div class="portrait_container">
+                    <img class="portrait" src="images\portraits\D_Allan.jpg" alt="Danny Allan's portrait">
+                    <img class="portrait_frame" src="images\portraits\portrait_frame.png" alt="Decoration">
+                </div>
+                <div class="leader_data_container">
+                    <h5 class="leader_name">Danny Allan</h5>
+                    <p class="leader_position">Chief Technology Officer</p>
+                </div>
+            </li>
+            <li class="expert_container">
+                <div class="portrait_container">
+                    <img class="portrait" src="images\portraits\O_Robinne.jpg" alt="Olivier Robinne's portrait">
+                    <img class="portrait_frame" src="images\portraits\portrait_frame.png" alt="Decoration">
+                </div>
+                <div class="leader_data_container">
+                    <h5 class="leader_name">Olivier Robinne</h5>
+                    <p class="leader_position">Vice President, EMEA</p>
+                </div>
+            </li>
+            <li class="expert_container">
+                <div class="portrait_container">
+                    <img class="portrait" src="images\portraits\M_Resseler.jpg" alt="Mike Resseler's portrait">
+                    <img class="portrait_frame" src="images\portraits\portrait_frame.png" alt="Decoration">
+                </div>
+                <div class="leader_data_container">
+                    <h5 class="leader_name">Mike Resseler</h5>
+                    <p class="leader_position">Director Product Management</p>
+                </div>
+            </li>
+            <li class="expert_container">
+                <div class="portrait_container">
+                    <img class="portrait" src="images\portraits\R_Vanover.jpg" alt="Rick Vanover's portrait">
+                    <img class="portrait_frame" src="images\portraits\portrait_frame.png" alt="Decoration">
+                </div>
+                <div class="leader_data_container">
+                    <h5 class="leader_name">Rick Vanover</h5>
+                    <p class="leader_position">Senior Director, Product Strategy</p>
+                </div>
+            </li>
+            <li class="expert_container">
+                <div class="portrait_container">
+                    <img class="portrait" src="images\portraits\M_Cade.jpg" alt="Michael Cade's portrait">
+                    <img class="portrait_frame" src="images\portraits\portrait_frame.png" alt="Decoration">
+                </div>
+                <div class="leader_data_container">
+                    <h5 class="leader_name">Michael Cade</h5>
+                    <p class="leader_position">Senior Global Technologist, Product Strategy</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <!-- Links for footer were taken from https://www.veeam.com/ -->
+        <div id="footer_container">
+            <div class="footer_copyright">
+                ©2021 Veeam® Software | <a href="https://www.veeam.com/privacy-policy.html?ad=footer">Privacy Policy
+                    &amp; Cookies</a> | <a href="https://www.veeam.com/eula.html?ad=footer">EULA</a> | <a
+                    href="https://www.veeam.com/licensing-policy.html?ad=footer">Licensing Policy</a>
+            </div>
+            <ul id="footer_icons_unordered_list">
+                <li class="footer_icon_container">
+                    <a class="icon_link" href="https://twitter.com/veeam"><img class="footer_icon"
+                            src="images\icons\twitter_icon.svg" alt="Twitter"></a>
+                </li>
+                <li class="footer_icon_container">
+                    <a class="icon_link" href="https://www.facebook.com/VeeamSoftware"><img class="footer_icon"
+                            src="images\icons\facebook_icon.svg" alt="Facebook"></a>
+                </li>
+                <li class="footer_icon_container">
+                    <a class="icon_link" href="https://www.linkedin.com/company/veeam-software"><img class="footer_icon"
+                            src="images\icons\linkedin_icon.svg" alt="LinkedIn"></a>
+                </li>
+                <li class="footer_icon_container">
+                    <a class="icon_link" href="https://community.spiceworks.com/pages/VeeamSoftware"><img
+                            class="footer_icon" src="images\icons\spiceworks_icon.svg" alt="Spiceworks"></a>
+                </li>
+                <li class="footer_icon_container">
+                    <a class="icon_link" href="https://www.youtube.com/user/YouVeeam"><img class="footer_icon"
+                            src="images\icons\youtube_icon.svg" alt="YouTube"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        hideShow = () => {
+            let popUp = document.getElementById("pop_up_container");
+            popUp.classList.toggle("hide_popup_container");
+        }
+    </script>
+</body>
+
+</html>
